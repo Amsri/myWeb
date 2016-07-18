@@ -1,0 +1,88 @@
+/*初始设置*/
+body{perspective: 1000px;}
+div{
+	position: relative;
+	margin: 100px auto;
+	width:400px;
+	height:400px;
+	/*border:2px solid black;*/
+	transform-style: preserve-3d;
+}
+.d1 pre{
+	position: absolute;
+	top: 0;left: 0;
+	box-sizing: border-box;
+	width: 100%;height: 100%;
+	border:2px solid black;
+	font-size: 60px;line-height:400px;text-align: center;
+	white-space:pre-wrap;
+	word-break:break-all;
+}
+
+/*hover变色*/
+.d1:hover pre.back{background-color: paleturquoise;color: #fff;opacity: 0.5;}
+.d1:hover pre.front{background-color:#FFA07A;color: #fff;opacity: 0.5;}
+.d1:hover pre.right{background-color:greenyellow;color: #fff;opacity: 0.5;}
+.d1:hover pre.left{background-color:lightblue;color: #fff;opacity: 0.5;}
+.d1:hover pre.bottom{background-color:darkgrey;color: #fff;opacity: 0.5;}
+.d1:hover pre.top{background-color:mediumorchid;color: #fff;opacity: 0.5;}
+.d1,.d1 pre{transition: all 2s linear;}
+
+/*top翻转*/
+.d1 pre.top{
+	animation: tot 1s both;
+}
+@keyframes tot{
+	from{}
+	to{transform: rotateX(90deg) translateZ(200px);}
+}
+/*bottom翻转*/
+.d1 pre.bottom{
+	animation: tob 1s 1s both;
+}
+@keyframes tob{
+	from{}
+	to{transform: rotateX(-90deg) translateZ(200px);}
+}
+/*left翻转*/
+.d1 pre.left{
+	animation: tol 1s 2s both;
+}
+@keyframes tol{
+	from{}
+	to{transform: rotateY(-90deg) translateZ(200px);}
+}
+/*rihgt翻转*/
+.d1 pre.right{
+	animation: tor 1s 3s both;
+}
+@keyframes tor{
+	from{}
+	to{transform: rotateY(90deg) translateZ(200px);}
+}
+/*back翻转*/
+.d1 pre.back{
+	animation: tobk 1s 4s both;
+}
+@keyframes tobk{
+	from{}
+	to{transform: rotateY(180deg) translateZ(200px);}
+}
+/*front翻转*/
+.d1 pre.front{
+	animation: tof 1s 5s both;
+}
+@keyframes tof{
+	from{}
+	to{transform:translateZ(200px);}
+}
+
+/*立方体旋转*/
+.d1{
+	animation:tox 5s 6s infinite linear both;
+	transform-style:preserve-3d;
+	}
+@keyframes tox{
+	from{transform: rotate3d(1,1,1,0deg);}
+	to{transform:rotate3d(1,1,1,360deg);}
+}

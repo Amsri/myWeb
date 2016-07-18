@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<select name="year" id="year">
+	        <option value="0">--</option>
+	        <option value="1999">1999</option>
+	        <option value="2000">2000</option>
+	        <option value="2001">2001</option>
+	    </select>年
+	    <select name="month" id="month">
+	        <option value="0">--</option>
+	        <option value="1">1</option>
+	        <option value="2">2</option>
+	        <option value="3">3</option>
+	        <option value="4">4</option>
+	        <option value="5">5</option>
+	        <option value="6">6</option>
+	        <option value="7">7</option>
+	        <option value="8">8</option>
+	        <option value="9">9</option>
+	        <option value="10">10</option>
+	        <option value="11">11</option>
+	        <option value="12">12</option>
+	    </select>月
+	    <select name="date" id="date">
+	        <option value="0">--</option>
+	    </select>日
+	    
+	    <script type="text/javascript">
+	    	
+	    	var Year=document.getElementById('year');
+	    	var Month=document.getElementById('month');
+	    	var Day=document.getElementById('date');
+	    	
+	    	//addEvent 兼容代码
+	        function addEvent(node,event,handler){
+	            if (!!node.addEventListener){
+	                node.addEventListener(event,handler,!1);
+	            }else{
+	                node.attachEvent('on'+event,handler);
+	            }
+	        }	    	
+	    	
+	    	//添加日期
+	    	function addDate(select,index){	    		
+	    		if(select.options[index].selected){
+	    			Day.options.length=1;           //控制“日”下拉选择框初始状态为0
+	    			if(index==0){
+	    				if(select.id=='year'){
+	    				Month.options[0].selected=true;	    				
+	    				}
+	    			}
+	    			var year=Year.options[Year.selectedIndex].value;
+		    		var month=Month.options[Month.selectedIndex].value;
+		    		if(year!=0&&month!=0){
+			    		var date=new Date(year,month,0);
+			    		var days=date.getDate();            //获取当月天数
+			    		for (var i=1;i<=days;i++) {
+			    			var option= new Option(i,i);
+			    			Day.add(option);
+			    		}
+		    		}
+	    		}	    		
+	    	}
+	    	
+	    	//日期下拉选择	    	
+	    	addEvent(Year,'change',function(){
+	    		for(var i=0;i<Year.options.length;i++){
+	    			addDate(this,i);
+	    		};
+	    	} );
+	    	addEvent(Month,'change',function(){
+				for(var i=0;i<Month.options.length;i++){
+	    			addDate(this,i);
+	    		}
+    		} );
+
+	    	
+	    </script>
+	</body>
+</html>
+
+<!--
+现需求如下：
+“年”或“月”发生变化且为有效值时，“日”下拉选择框显示相应的项。 
+“年”下拉选择框为初始状态（即值为0）时， “月”、“日”下拉选择框一定为初始状态（即值为0）。
+ “月”下拉选择框为初始状态（即值为0）时， “日”下拉选择框一定为初始状态（即值为0）。
+
+请写出以上需求的实现代码，要求浏览器兼容。
+-->

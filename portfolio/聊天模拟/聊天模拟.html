@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>模拟短信发送</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.container{width: 200px;border: 1px solid #333;margin: 50px auto;border-radius: 10px;}
+			#lt{height:350px;border-bottom: 1px solid #333;overflow: auto;background:url(img/bg1.jpg) no-repeat;}
+			.sd{height: 30px;position: relative;}
+			img{width: 20px;height: 20px;}
+			#img1{position: absolute;top:5px;left: 5px;border-radius: 5px;}
+			input{width: 130px;position: absolute;left: 30px;top: 5px;border-radius: 5px;}
+			button{width: 30px;height:20px;font-size: 12px;border: none;background: #fff;position: absolute;right: 5px;top:5px}
+			
+			.d0,.d1{word-break:break-all;word-wrap:break-word;margin:2px 0;padding:4px;}
+			.d0,.i0,.d0.content{float: left;}
+			.d1,.i1,.d1.content{float: right;}
+			.clear{clear: both;}
+			.i0,.i1{width: 20px;height: 20px;display: block;margin:5px;}
+			.content{max-width:130px;line-height:22px;border:1px solid #ccc;border-radius:3px;}
+			.content.d0{background-color: #fff;color: #AFEEEE;margin-right:4px;}
+			.content.d1{background-color: #AFEEEE;color: #fff;margin-left:4px;}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oDiv=document.getElementById('lt');
+				var oImg=document.getElementById('img1');
+				var oText=document.getElementById('text');
+				var oSend=document.getElementById('send');
+				
+				var arr=['img/1.jpg', 'img/2.jpg'];
+				var num=0;
+					oImg.onclick = function (){
+						num=(num+1)%arr.length;
+						oImg.src=arr[num];
+					};
+				
+				oSend.onclick=function(){
+					if(num==0){
+						oDiv.innerHTML+="<div class='d0 clear'><img class='i0' src='"+arr[0]+"' /><div class='content d0'>"+oText.value+"</div></div>";
+						oText.value = '';
+					}
+					else{
+						oDiv.innerHTML+="<div class='d1 clear'><img class='i1' src='"+arr[1]+"' /><div class='content d1'>"+oText.value+"</div></div>";
+						oText.value = '';
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="lt"></div>
+			<div class="sd">	
+				<div class="di">
+					<img id='img1' src="img/1.jpg" />
+				</div>
+				<input id="text" type="text" />
+				<button id="send" type="button">发送</button>
+			</div>
+		</div>		
+	</body>
+</html>

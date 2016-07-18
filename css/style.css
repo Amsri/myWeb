@@ -1,0 +1,629 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+.blue {
+	color: #06C;
+}
+
+.green {
+	color: #090;
+}
+
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]:-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* basic style */
+body {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+}
+
+a {
+  color: #069;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  text-decoration: none;
+}
+a:hover {
+  color: #555;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #555;
+}
+
+.main-content,#myCarousel {
+  float: right;
+  width: 77%;
+}
+
+.content-box {
+  padding: 0 80px;
+}
+
+@media screen and (max-width: 1290px) {
+  .main-content,#myCarousel {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main-content,#myCarousel {
+    width: 100%;
+  }
+  .content-box {
+    padding: 0 30px;
+  }
+}
+
+hr {
+  position: relative;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  height: 4px;
+  background: #dddddd;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.page-section {
+  padding-top: 50px;
+}
+
+.experience h3,.myskill h3,.portfolio-description h3,.contact-me h3{
+	font:bold 16px "微软雅黑";
+	color: #474d5d;
+}
+
+.experience p,.portfolio-description p,.contact-me p{
+	margin: 2px;
+	text-indent: 32px;
+}
+
+/* header */
+.sidebar-menu {
+  float: left;
+  width: 23%;
+  height: 100%;
+  position: fixed;
+  background-color: #5f6d7e;
+  color: white;
+  overflow-y: hidden;
+}
+@media screen and (max-width: 1290px) {
+  .sidebar-menu {
+    overflow-y: scroll;
+    width: 30%;
+  }
+}
+
+.top-section {
+  padding: 40px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border: 4px solid white;
+  -webkit-border-radius: 75px;
+  border-radius: 75px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.profile-image img {
+  width: 100%;
+}
+
+h3.profile-title {
+  margin-bottom: 5px;
+  color: white;
+  font-size: 18px;
+  font-family: 'robotobold';
+}
+
+.main-navigation {
+  margin: 30px 0;
+}
+.main-navigation li {
+  display: block;
+}
+.main-navigation li a {
+  padding: 15px 40px;
+  display: block;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+.main-navigation li a i {
+  margin-right: 15px;
+  font-size: 24px;
+}
+.main-navigation li a:hover {
+  background: #5b6878;
+}
+.main-navigation li a.active,.main-navigation li a.active:hover{
+  background: #495461;
+}
+
+.social-icons {
+  display: block;
+  padding: 30px 40px;
+}
+.social-icons li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.social-icons a {
+  font-size: 18px;
+  color: white;
+}
+.social-icons a:hover {
+  color: #282e35;
+}
+
+.responsive-header {
+  background: #5f6d7e;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .responsive-header .main-navigation {
+    margin-top: 10px;
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .responsive-header p {
+    color: white;
+  }
+}
+@media screen and (max-width: 992px) {
+  .responsive-header .profile-image {
+    float: left;
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 30px;
+  }
+  .responsive-header .profile-content {
+    text-align: left;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .top-section {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main-navigation a {
+    padding: 10px;
+  }
+  .main-navigation a.active {
+    background: #5f6d7e !important;
+  }
+  .main-navigation a:hover {
+    background: #5f6d7e !important;
+  }
+}
+
+.toggle-menu {
+  width: 100%;
+  display: block;
+  padding: 20px;
+  margin-top: 30px;
+  background: #6cc0f7;
+  color: white;
+  font-size: 18px;
+}
+.toggle-menu:hover {
+  color: white;
+}
+
+/* carousel */
+.item{
+	position: relative;	
+}
+
+.carousel-filter{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-text{
+	position: absolute;
+	top: 40%;
+	left: 20%;
+	z-index: 2;
+}
+
+.carousel-text h2 {
+    font-size: 42px;
+    line-height:58px;   
+    color: #fff;
+}
+.carousel-text span {
+    font-size: 22px;
+    color: #fff;
+}
+
+@media screen and (max-width:768px){
+	.carousel-text h2{
+		font-size: 30px;
+		line-height: 38px;
+	}
+	.carousel-text span {
+	    font-size: 14px;
+	}
+}
+
+/* About */
+
+
+ /* myskill */
+.circle-wrapper,.circlewrapper,.circlePro{
+	box-sizing: content-box;
+}
+
+.skill .circle-wrapper{
+	position: relative;
+	width: 160px;
+	height: 160px;
+	margin: 24px auto;	
+	}
+	
+.skill .circlewrapper{
+	position: absolute;
+	top:0;
+	overflow: hidden;
+	width: 80px;
+	height: 160px;
+}
+
+.skill .right{
+	right:0;
+}
+
+.skill .left{
+	left:0;
+}
+
+.skill .circlePro{
+	width: 130px;
+	height: 130px;
+	border:15px solid transparent;
+	border-radius: 50%;
+	position: absolute;
+	top:0;
+	-webkit-transform: rotate(-135deg);
+}
+
+.skill .rightcircle{
+	border-top:15px solid #474d5d;;
+	border-right:15px solid #474d5d;;
+	right:0;
+	-webkit-animation: circleProgressLoad-right 3s linear forwards;
+}
+
+@-webkit-keyframes circleProgressLoad-right{
+	0%{
+		-webkit-transform: rotate(-135deg);
+	}
+	50%,100%{
+		-webkit-transform: rotate(45deg);
+	}
+}
+
+.skill .leftcircle{
+	border-bottom:15px solid #474d5d;;
+	border-left:15px solid #474d5d;;
+	left:0;	
+}
+
+.skill .text-percent{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	width: 60px;
+	height: 60px;
+	font: 24px/60px "微软雅黑";
+	text-align: center;
+	color:#474d5d;
+}
+
+.skill h3{
+	font: 24px/24px "微软雅黑";
+	text-align: center;
+	color: #E87E04;
+	text-shadow: 1px 1px #fff;
+}
+	/* HTML CSS 90% */
+.skill .circle-html,.skill .circle-css{
+	-webkit-animation: circle-90 3s linear forwards;
+}
+
+@-webkit-keyframes circle-90{
+	0%,50%{
+		-webkit-transform: rotate(-135deg);
+	}
+	100%{
+		-webkit-transform: rotate(9deg);
+	}
+}
+	/* JavaScript 80% */
+.skill .circle-js{
+	-webkit-animation: circle-80 3s linear forwards;
+}
+
+@-webkit-keyframes circle-80{
+	0%,50%{
+		-webkit-transform: rotate(-135deg);
+	}
+	100%{
+		-webkit-transform: rotate(-27deg);
+	}
+}
+	/* jQuery bootstrap 60% */
+.skill .circle-jQ,.skill .circle-bs{
+	-webkit-animation: circle-60 3s linear forwards;
+}
+
+@-webkit-keyframes circle-60{
+	0%,50%{
+		-webkit-transform: rotate(-135deg);
+	}
+	100%{
+		-webkit-transform: rotate(-99deg);
+	}
+}
+	/* photoshop 75% */
+.skill .circle-ps{
+	-webkit-animation: circle-75 3s linear forwards;
+}
+
+@-webkit-keyframes circle-75{
+	0%,50%{
+		-webkit-transform: rotate(-135deg);
+	}
+	100%{
+		-webkit-transform: rotate(-45deg);
+	}
+}
+
+/* portfolio */
+.myPort {
+	margin: 40px 0 0;
+}
+.myPort .col-md-4 {
+	padding: 0 1px;
+}
+
+.prot-item {
+  width: 100%;
+  margin-bottom: 2px;
+  overflow: hidden;
+  position: relative;
+}
+.prot-item img {
+  width: 100%;
+  display: block;
+}
+.prot-item:hover .prot-hover {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.prot-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 40px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  visibility: 0;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.prot-hover .inside {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 30px;
+}
+.prot-hover h5 {
+	font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.prot-hover h5 a {
+  color: white;
+}
+.prot-hover p {
+  color: white;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* Contact */
+.contact-info{
+	margin: 40px 0;
+}
+
+.contact-info .info{
+	font: 20px/50px "微软雅黑";
+	margin: 0 auto;
+}
+
+.info-box{
+	width: 300px;
+	margin: 20px auto;	
+}
+
+.contact-info .info i{
+	width: 20px;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.message h3{
+	font: 16px/50px "微软雅黑";
+}
+
+.message .btn{
+	float: right;
+	margin-top: 10px;
+	background: #fff;
+}
+
+.message .btn:hover{
+	border: 1px solid #474d5d;
+	color: #474d5d;
+}

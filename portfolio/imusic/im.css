@@ -1,0 +1,278 @@
+/*基础设置*/
+*{margin: 0;padding: 0;}
+body{background-color: #f5f5f5;font: 12px "微软雅黑";}
+ul{list-style: none;}
+a{text-decoration: none;color: #888;}
+
+
+/*continer居中设置*/
+.continer{
+	width: 900px;
+	padding: 40px;
+	border: 1px solid #d3d3d3;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+/*nav*/
+.nav{
+	width: 900px;height: 190px;
+}
+.nav ul{
+	margin-left: -33px;
+	overflow: hidden;
+}
+.nav li{
+	float: left;
+}
+.nav li a{
+	display: block;
+	width: 66px;height: 66px;
+	border: 2px solid transparent;
+	border-radius: 3px;
+	text-align: center;
+	margin: 0 0px 25px 33px;
+}
+.nav li a:hover{
+	background-color: #f6f7f7;
+}
+.nav li.selected a{
+	border-color: #db5e5e;
+	color:#D35757;
+	background-color: #fff;
+}
+.nav li a:before{
+	content:"";
+	display: block;
+	width: 40px;height: 35px;
+	margin: 8px auto 0;
+	background: url(nav.png) no-repeat;
+}
+li.mxzb a:before{
+	background-position: 0 0;
+}
+li.mxzb.selected a:before{
+	background-position: -40px 0;
+}
+li.yygs a:before{
+	background-position: 0 -40px;
+}
+li.yygs.selected a:before{
+	background-position: -40px -40px;
+}
+li.qgyz a:before{
+	background-position: 0 -80px;
+}
+li.qgyz.selected a:before{
+	background-position: -40px -80px;
+}
+li.ylbg a:before{
+	background-position: 0 -120px;
+}
+li.ylbg.selected a:before{
+	background-position: -40px -120px;
+}
+li.gbj a:before{
+	background-position: 0 -160px;
+}
+li.gbj.selected a:before{
+	background-position: -40px -160px;
+}
+li.tkx a:before{
+	background-position: 0 -200px;
+}
+li.tkx.selected a:before{
+	background-position: -40px -200px;
+}
+li.qyxs a:before{
+	background-position: 0 -240px;
+}
+li.qyxs.selected a:before{
+	background-position: -40px -240px;
+}
+li.ysdw a:before{
+	background-position: 0 -280px;
+}
+li.ysdw.selected a:before{
+	background-position: -40px -280px;
+}
+li.rwls a:before{
+	background-position: 0 -320px;
+}
+li.rwls.selected a:before{
+	background-position: -40px -320px;
+}
+li.lzlx a:before{
+	background-position: 0 -360px;
+}
+li.lzlx.selected a:before{
+	background-position: -40px -360px;
+}
+li.wy a:before{
+	background-position: 0 -400px;
+}
+li.wy.selected a:before{
+	background-position: -40px -400px;
+}
+li.et a:before{
+	background-position: 0 -440px;
+}
+li.et.selected a:before{
+	background-position: -40px -440px;
+}
+li.dm a:before{
+	background-position: 0 -480px;
+}
+li.dm.selected a:before{
+	background-position: -40px -480px;
+}
+li.fc a:before{
+	background-position: 0 -520px;
+}
+li.fc.selected a:before{
+	background-position: -40px -520px;
+}
+li.yszb a:before{
+	background-position: 0 -560px;
+}
+li.yszb.selected a:before{
+	background-position: -40px -560px;
+}
+
+/*title*/
+.title{
+	width:900px;height: 44px;
+	margin: 5px 0;
+	border-bottom:2px solid#C20C0C ;
+	overflow: hidden;
+}
+.title h2{
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 44px;
+	float: left;
+}
+.title ul{
+	float: right;
+	overflow: hidden;
+}
+.title li{
+	float: left;
+	width: 48px;height: 12px;
+	padding:10px 0;
+	margin-top: 12px;
+}
+.title li.zrdt{
+	margin-left:19px;
+	position: relative;
+}
+.title li.zrdt:before{
+	content:"";
+	display: block;
+	position: absolute;
+	top:12px;left:-19px;
+	width: 10px;height: 12px;
+	border-right: 1px solid #c7c7c7;
+}
+.title li.selected a{
+	color: #C20C0C;
+}
+
+/*优秀新电台*/
+.new{
+	width: 900px;height: 290px;
+	line-height:18px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.new img{
+	width: 150px;height: 150px;
+}
+.new ul{
+	margin-left: -37px;
+	overflow: hidden;
+}
+.new li{
+	float: left;
+	width: 150px;
+	margin:15px 0 0 37px;
+}
+.new h3{
+	font-size: 14px;
+	margin-top: 7px;
+}
+.new h3 a{
+	color: #333;
+}
+.new p{
+	color: #999;
+	margin-top: 6px;
+}
+
+/*hot*/
+.hot{
+	width: 900px;
+	overflow: hidden;
+}
+.hot img{
+	width: 120px;height: 120px;
+	float: left;	
+}
+.hot ul{
+	margin-left: -30px;
+	overflow: hidden;
+}
+.hot ul li{
+	float:left;
+	width: 434px;
+	padding: 15px 0 20px;
+	margin-left: 30px;
+	border-bottom: 1px solid #e7e7e7;
+}
+.txt{
+	float: right;
+	width: 294px;
+}
+.txt h3{
+	/* 两行高度 */
+	height:60px;
+	line-height:60px;
+	overflow:hidden;
+	font-size:16px;
+}
+.txt h3 a{
+	/* 垂直居中 */
+	display:inline-block;
+	vertical-align:middle;
+	line-height:22px;
+	color: #333333;
+}
+.host{
+	position: relative;
+	padding-left: 20px;
+	line-height: 20px;
+}
+.host a{
+	color: #666;
+}
+.host:before{
+	content: "";
+	display: block;
+	position:absolute;
+	top:2px;left:0;
+	width: 20px;height: 20px;
+	background: url(icon.png) no-repeat 0 0;
+}
+.host:after{
+	content: "";
+	display: block;
+	position:absolute;
+	top:2px;left:86px;
+	width: 20px;height: 20px;
+	background: url(icon.png) no-repeat 0 -20px;
+}
+.txt span{
+	display: inline-block;
+	margin:8px 10px 0 0;
+	color: #999;
+}

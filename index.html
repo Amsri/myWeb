@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人网站</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+		
+		<!-- 屏幕宽度小于992px导航 -->
+		<div class="responsive-header visible-xs visible-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="top-section">
+                            <div class="profile-image">
+                                <img src="img/profile.jpg" alt="Volton">
+                            </div>
+                            <div class="profile-content">
+                                <h3 class="profile-title">苏芮</h3>
+                                <p class="profile-description">一枚web前端开发爱好者</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+                <div class="main-navigation responsive-menu">
+                    <ul class="navigation">
+                        <li><a href="#myCarousel"><i class="fa fa-home"></i>Home</a></li>
+                        <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                        <li><a href="#portfolio"><i class="fa fa-newspaper-o"></i>Portfolio</a></li>
+                        <li><a href="#contact"><i class="fa fa-envelope"></i>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		
+        <!-- 屏幕宽度大于992px导航 -->
+        <div class="sidebar-menu hidden-xs hidden-sm">
+            <div class="top-section">
+                <div class="profile-image">
+                    <img src="img/profile.jpg" alt="Volton">
+                </div>
+                <h3 class="profile-title">苏芮</h3>
+                <p class="profile-description">求职意向：web前端开发</p>
+            </div>
+            <div class="main-navigation">
+                <ul class="navigation">
+                    <li><a href="#myCarousel"><i class="fa fa-globe"></i>Welcome</a></li>
+                    <li><a href="#about"><i class="fa fa-pencil"></i>About</a></li>
+                    <li><a href="#portfolio"><i class="fa fa-paperclip"></i>Portfolio</a></li>
+                    <li><a href="#contact"><i class="fa fa-link"></i>Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                </ul>
+            </div> 
+        </div> 
+        
+        <!-- 侧栏轮播幻灯片 -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+        	<!-- 轮播（Carousel）指标 -->
+		   	<ol class="carousel-indicators">
+		      	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      	<li data-target="#myCarousel" data-slide-to="1"></li>
+		      	<li data-target="#myCarousel" data-slide-to="2"></li>
+		   	</ol>   
+		   	<!-- 轮播（Carousel）项目 -->
+		   	<div class="carousel-inner">
+		      	<div class="item active">
+		         	<img src="img/carousel/ca1.jpg" alt="First slide">
+		         	<div class="carousel-filter"></div>
+		         	<div class="carousel-text">
+		         		<h2>Welcome</h2>
+		         		<span>本网站应用html5、css3部分特性及bootstrap、jQuery框架搭建。</span>
+		         	</div>
+		      	</div>
+		      	<div class="item">
+		         	<img src="img/carousel/ca2.jpg" alt="Second slide">
+		         	<div class="carousel-filter"></div>
+		         	<div class="carousel-text">
+		         		<h2>Bootstrap</h2>
+		         		<span>基于Bootstrap框架的设计，响应式布局，让你拥有更好的体验。</span>
+		         	</div>
+		      	</div>
+		      	<div class="item">
+		         	<img src="img/carousel/ca3.jpg" alt="Third slide">
+		         	<div class="carousel-filter"></div>
+		         	<div class="carousel-text">
+		         		<h2>CSS3</h2>
+		         		<span>紧跟时代潮流，采用CSS3部分特性完成动画效果</span>
+		         	</div>
+		      	</div>
+		   	</div>
+        </div>
+        
+        <div class="main-content">
+        	<div class="content-box">
+        		        			
+        		<!-- About -->
+        		<div class="page-section" id="about">
+        			<div class="row">
+        				<div class="col-md-12">
+        					<div class="experience">
+        						<h3>个人经历</h3>
+        						<p>2011.09-2015.07就读于武汉轻工大学；专业：电子信息科学与技术；</p>
+        						<p>2015.06-2015.09就职于微盟电子（昆山）有限公司，任职助理工程师一职；</p>
+        						<p>2016.04-2016.07在网易云课堂学习web开发工程师微专业课程并获得微专业优秀证书。</p>
+        					</div>
+        					<div class="myskill">
+        						<h3>个人技能</h3>
+        						<div class="row">
+	        						<div class="skill col-md-4 col-sm-6">
+										<div class="circle-wrapper">
+									        <div class="circlewrapper right">
+									            <div class="circlePro rightcircle"></div>
+									        </div>
+									        <div class="circlewrapper left">
+									            <div class="circlePro leftcircle circle-html"></div>
+									        </div>
+									        <div class="text-percent">90%</div>
+								 		</div>
+								 		<h3>HTML</h3>
+							 		</div>
+							 		<div class="skill col-md-4 col-sm-6">
+										<div class="circle-wrapper">
+									        <div class="circlewrapper right">
+									            <div class="circlePro rightcircle"></div>
+									        </div>
+									        <div class="circlewrapper left">
+									            <div class="circlePro leftcircle circle-css"></div>
+									        </div>
+									        <div class="text-percent">90%</div>
+								 		</div>
+								 		<h3>CSS</h3>
+							 		</div>
+							 		<div class="skill col-md-4 col-sm-6">
+										<div class="circle-wrapper">
+									        <div class="circlewrapper right">
+									            <div class="circlePro rightcircle"></div>
+									        </div>
+									        <div class="circlewrapper left">
+									            <div class="circlePro leftcircle circle-js"></div>
+									        </div>
+									        <div class="text-percent">80%</div>
+								 		</div>
+								 		<h3>JavaScript</h3>
+							 		</div>
+							 		<div class="skill col-md-4 col-sm-6">
+										<div class="circle-wrapper">
+									        <div class="circlewrapper right">
+									            <div class="circlePro rightcircle"></div>
+									        </div>
+									        <div class="circlewrapper left">
+									            <div class="circlePro leftcircle circle-jQ"></div>
+									        </div>
+									        <div class="text-percent">60%</div>
+								 		</div>
+								 		<h3>jQuery</h3>
+							 		</div>
+							 		<div class="skill col-md-4 col-sm-6">
+										<div class="circle-wrapper">
+									        <div class="circlewrapper right">
+									            <div class="circlePro rightcircle"></div>
+									        </div>
+									        <div class="circlewrapper left">
+									            <div class="circlePro leftcircle circle-bs"></div>
+									        </div>
+									        <div class="text-percent">60%</div>
+								 		</div>
+								 		<h3>bootstrap</h3>
+							 		</div>
+							 		<div class="skill col-md-4 col-sm-6">
+										<div class="circle-wrapper">
+									        <div class="circlewrapper right">
+									            <div class="circlePro rightcircle"></div>
+									        </div>
+									        <div class="circlewrapper left">
+									            <div class="circlePro leftcircle circle-ps"></div>
+									        </div>
+									        <div class="text-percent">75%</div>
+								 		</div>
+								 		<h3>photoshop</h3>
+							 		</div>
+	        					</div>
+        					</div>
+        					<hr />
+        				</div>
+        			</div>
+        		</div>
+        		
+        		<!-- Portfolio -->
+        		<div class="page-section" id="portfolio">
+        			<div class="row">
+        				<div class="col-md-12">
+        					<div class="portfolio-description">
+        						<h3>作品集</h3>
+        						<p>看得再多，不写写、敲敲，永远都不会发现代码带给我们的奇妙体验！~</p>
+        						<p>以下作品均为本人独立完成，熟练应用DIV+CSS进行静态页面布局，应用Javascript进行页面动态渲染，其中也包含了对响应式布局、CSS3、Bootstrap、jQuery的应用实践。当然肯定也存在瑕疵，还请大家多多指教~</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="myPort row">
+        				<div class="col-md-4 col-sm-6">
+        					<div class="prot-item">
+		                        <img src="img/1.jpg" alt="">
+		                        <div class="prot-hover">
+		                        	<div class="inside">
+		                                <h5><a href="#myCarousel">个人网站</a></h5>
+		                                <p>使用bootstrap实现响应式布局，结合css3实现页面动画效果。</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		               	</div>
+		               	<div class="col-md-4 col-sm-6">
+		                    <div class="prot-item">
+		                        <img src="img/2.jpg" alt="">
+		                        <div class="prot-hover">
+		                            <div class="inside">
+		                                <h5><a href="portfolio/网易微专业实践/index.html" target="_blank">网易教育产品部</a></h5>
+		                                <p>零框架，DIV+CSS实现静态页面布局，javascript实现页面动态渲染效果，Ajax实现登陆关注等。</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>   
+		                <div class="col-md-4 col-sm-6">
+		                    <div class="prot-item">
+		                        <img src="img/3.jpg" alt="">
+		                        <div class="prot-hover">
+		                            <div class="inside">
+		                                <h5><a href="portfolio/CSS3旋转立方体/立方体.html" target="_blank">CSS3旋转立方体</a></h5>
+		                                <p>运用CSS3动画特性，实现从平面到立方体的转换并实现自动旋转，此外还有hover颜色变化增强体验。</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>    
+		                <div class="col-md-4 col-sm-6">
+		                    <div class="prot-item">
+		                       	<img src="img/4.jpg" alt="">
+		                        <div class="prot-hover">
+		                            <div class="inside">
+		                                <h5><a href="portfolio/imusic/imusic.html" target="_blank">网易云音乐</a></h5>
+		                                <p>运用sprite方法切图，节约空间，减少请求，运用DIV+CSS实现静态页面布局</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>    
+		                <div class="col-md-4 col-sm-6">
+		                    <div class="prot-item">
+		                        <img src="img/5.jpg" alt="">
+		                        <div class="prot-hover">
+		                            <div class="inside">
+		                               	<h5><a href="">待续</a></h5>
+		                                <p>正在开发...</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>    
+		                <div class="col-md-4 col-sm-6">
+		                    <div class="prot-item">
+		                        <img src="img/6.jpg" alt="">
+		                        <div class="prot-hover">
+		                            <div class="inside">
+		                             	<h5><a href="">待续</a></h5>
+		                                <p>正在开发...</p>
+		                            </div>
+		                        </div>
+		                    </div>
+        				</div>
+        			</div>
+        			<hr />
+        		</div>
+        	
+        		<!-- Contact -->
+        		<div class="page-section" id="contact">
+        			<div class="row">
+        				<div class="col-md-12">
+        					<div class="contact-me">
+        						<h3>联系我</h3>
+        						<p>如果你对我的信息感兴趣的话，请联系我。</p>        						
+        					</div>
+        				</div>
+        			</div>
+        			<div class="contact-info row">       				
+        				<div class="info col-md-6 col-sm-12">
+        					<div class="info-box">
+	        					<div><i class="fa fa-user"></i> 姓名：苏芮</div>
+	        					<div><i class="fa fa-phone"></i> 手机：15549492401</div>
+	        					<div><i class="fa fa-envelope"></i> 邮箱：amsri9@163.com</div>
+	        					<div><i class="fa fa-map-marker"></i> 地址：湖北省随州市</div>
+        					</div>
+        				</div>
+        				<div class="info col-md-6 col-sm-12">
+        					<div class="info-box message">
+        						<h3>如果您有什么问题，欢迎留言！</h3>
+        						<textarea class="form-control" rows="4"></textarea>
+        						<button  class="btn btn-default">提交</button>
+        					</div>
+        				</div>
+        			</div>
+        			<hr style="margin-bottom: 50px;" />
+        		</div>
+        		
+        	</div>
+
+        </div>
+        
+      	<script type="text/javascript" src="js/main.js" ></script>
+	</body>
+</html>

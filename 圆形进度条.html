@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		.circleProgress_wrapper{
+		  width: 160px;
+		  height: 160px;
+		  position: relative;
+		}
+		.wrapper{
+		  width: 80px;
+		  height: 160px;
+		  position: absolute;
+		  top:0;
+		  overflow: hidden;
+		}
+		.right{
+		  right:0;
+		}
+		.left{
+		  left:0;
+		}
+		.circleProgress{
+		  width: 130px;
+		  height: 130px;
+		  border:15px solid transparent;
+		  border-radius: 50%;
+		  position: absolute;
+		  top:0;
+		  -webkit-transform: rotate(-135deg);
+		}
+		.rightcircle{
+		  border-top:15px solid #474d5d;;
+		  border-right:15px solid #474d5d;;
+		  right:0;
+		  -webkit-animation: circleProgressLoad_right 5s linear forwards;
+		}
+		.leftcircle{
+		  border-bottom:15px solid #474d5d;;
+		  border-left:15px solid #474d5d;;
+		  left:0;
+		  -webkit-animation: circleProgressLoad_left 5s linear forwards;
+		}
+		@-webkit-keyframes circleProgressLoad_right{
+		  0%{
+		    -webkit-transform: rotate(-135deg);
+		  }
+		  50%,100%{
+		    -webkit-transform: rotate(45deg);
+		  }
+		}
+		@-webkit-keyframes circleProgressLoad_left{
+		  0%,50%{
+		    -webkit-transform: rotate(-135deg);
+		  }
+		  100%{
+		    -webkit-transform: rotate(-45deg);
+		  }
+		}
+		.text-percent{
+			position: absolute;
+			top: 50px;
+			left: 50px;
+			width: 60px;
+			height: 60px;
+			font: 24px/60px "微软雅黑";
+			text-align: center;
+			color:#474d5d;
+		}
+		.skill h3{
+			width: 160px;
+			font: 24px/30px "微软雅黑";
+			text-align: center;
+			color: #E87E04;
+			text-shadow: 1px 1px #fff;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="skill">
+			<div class="circleProgress_wrapper">
+		        <div class="wrapper right">
+		            <div class="circleProgress rightcircle"></div>
+		        </div>
+		        <div class="wrapper left">
+		            <div class="circleProgress leftcircle"></div>
+		        </div>
+		        <div class="text-percent">75%</div>
+	 		</div>
+	 		<h3>CSS</h3>
+ 		</div>
+	</body>
+</html>

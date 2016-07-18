@@ -1,0 +1,204 @@
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,\5b8b\4f53;color:#333;outline:0;}
+body{background:#fff;width: 1616px;}
+a,a:hover{color:#333;}
+
+/* function */
+.f-cb:after,.f-cbli li:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+.f-cb,.f-cbli li{zoom:1;}
+.f-ib{display:inline-block;*display:inline;*zoom:1;}
+.f-fl{float:left;}
+.f-fr{float:right;}
+.f-csp{cursor:pointer;}
+
+/* 自适应布局  */
+  /* 窗口宽度大于1205px */
+ html,body{width: 100%;}
+	.g-doc{width: 100%;margin:0 auto;background:#fff;}
+	.m-prmp,.m-head,.m-ct,.g-box{width:1208px;margin:0 auto;}
+	.m-slide{width: 100%;}
+	.m-ct ul{margin-left:-80px;}
+	.m-ct li{float:left;width:340px;height:180px;margin-left:80px;}
+	.g-mn{width:970px;}
+	.g-ft .copyright{margin:90px 152px 82px;}
+
+  /* 窗口宽度小于1205px */
+@media screen and (max-width:1205px){
+	.g-doc{width:1364px;margin:0 auto;background:#fff;}
+	.m-prmp,.m-head,.m-ct,.g-box{width:960px;margin:0 auto;}
+	.m-slide{width:1364px;overflow:hidden;}
+	.m-slide div{margin:0 -126px;}/* 幻灯居中截取 */
+	.m-ct ul{margin-left:-70px;}
+	.m-ct li{float:left;width:273px;height:200px;margin-left:70px;}
+	.g-bd1{width:1364px;overflow:hidden;}
+	.g-wrap{width:1616px;margin:0 -140px;}/* 工作区展示图片居中截取 */
+	.g-mn{width:725px;}
+	.g-ft .copyright{margin:90px 152px 82px 213px;}
+}
+
+ /* 顶部提示条 */ 
+.g-hd{height:36px;background:#f3f3f3;}
+.m-prmp{font:12px/36px "Microsoft YaHei";color:#333;}
+.m-prmp a{color:#4fb173;}
+.m-prmp .alert{height:12px;margin:12px 0;line-height:12px;text-indent:15px;background:url(../img/icon.png) no-repeat 0 0;}
+
+/* 竖线分隔部分设置 */
+.m-head{height:89px;}
+.m-crumb{overflow:hidden;margin:25px 31px 31px 0;font:20px "microsoft yahei";color:#333;}
+.m-crumb ul li:first-child{font:bold 24px "microsoft yahei";color:#39a030;}
+.m-crumb ul{margin-left:-20px;}
+.m-crumb li{float:left;word-wrap:normal;white-space:nowrap;}
+.m-crumb li:before{display:inline-block;width:20px;text-align:center;content:'|';font-size:18px;font-weight:normal;color:#39a030;}
+
+/* 关注及粉丝 */
+.m-concern{margin-top:30px;}
+.m-concern #btn{width:54px;height:21px;margin-right:15px;border:none;color:#fff;text-indent:22px;background:url(../img/icon2.png) no-repeat 0 0;}
+.m-concern #btn:hover{background:url(../img/icon2.png) no-repeat -76px 0;}
+.concerned{width:104px;height:19px;margin-right:15px;border:1px solid #efefef;border-radius:1px;font:12px/19px SimSun;text-indent:22px;color:#333;background:url(../img/icon.png) no-repeat 0 -148px #f8f8f8;}
+.concerned .cancel{color:#999;padding:0 6px;border-left:1px solid #ccc;}
+.concerned:hover{background:url(../img/icon.png) no-repeat 0 -148px #fff;}
+.concerned .cancel:hover{color:#21a557;text-decoration:underline;}
+
+/* 三个小导航链接 */
+.m-nav{overflow:hidden;margin-right:15px;font:16px "microsoft yahei";}
+.m-nav li{float:left;margin:33px 0 35px 55px;}
+.m-nav li.search{margin-left:30px ;}
+.m-nav li.search a{display:block;width:18px;height:18px;background:url(../img/icon.png) no-repeat 0 -42px;}
+.m-nav a{color:#666;}
+.m-nav a:hover{color:#39a030;}
+.m-nav li.search a:hover{background:url(../img/icon.png) no-repeat -1px -66px;} 
+
+/* 幻灯部分 */
+.m-slide{position:relative;height:460px;overflow:hidden;}
+.m-slide .u-pointer{position:absolute;bottom:20px;left:0;right:0;z-index:50;text-align:center;line-height:0;}
+.u-pointer li{display:inline-block;width:10px;height:10px;margin:0 5px;border-radius:50%;cursor:pointer;background:#fff;}
+.u-pointer li.z-crt{background:#333;}
+
+/* 简介导航 */
+.m-ct{height:235px;}
+.m-ct{margin-top:60px;}
+.m-logo{float:left;width:80px;height:80px;margin:6px 20px 0 0;}
+.m-logo1{background:url(../img/icon2.png) no-repeat 0 -36px;}
+.m-logo2{background:url(../img/icon2.png) no-repeat -93px -36px;}
+.m-logo3{background:url(../img/icon2.png) no-repeat -185px -36px;}
+.m-ct .txt{overflow:hidden;}
+.m-ct .txt h3{margin-bottom:10px;font:22px "microsoft yahei";color:#333;}
+.m-ct .txt p{margin-bottom:25px;font:14px/24px "microsoft yahei";color:#666;}
+.m-ct .txt a{font:14px "microsoft yahei";color:#39a030;}
+.m-ct .txt a:hover{text-decoration: underline;}
+
+/* 工作环境图片展示 */
+.g-wrap ol{margin-left:0;}
+.g-wrap img{width:100%;}
+.g-wrap li{float:left;width:20%;margin-left:0;box-sizing:border-box;}
+
+/* 课程区布局 */
+.g-bd2{background:#f8f8f8;}
+.g-bd2 .g-box{padding-top:80px;}
+.g-side{float:right;width:223px;margin-left:12px;}
+
+/* 选项卡 */
+.m-tab{overflow:hidden;margin-bottom:20px;}
+.m-tab ul{width:400px;border:1px solid #ddd;box-shadow:0 1px #ecebeb;background:#fff;cursor:pointer;}
+.m-tab li{float:left;width:200px;height:50px;font:20px/50px "microsoft yahei";text-align:center;color:#666;}
+.m-tab li.active{color:#fff;background:#39a030;}
+
+/* 课程列表 */
+.m-list{height:1250px;}
+.m-list ul{margin-left:-10px;font:12px/12px "microsoft yahei";}
+.m-list li{float:left;width:223px;height:228px;padding:1px;margin:10px;box-shadow:0 1px 1px 1px #e6e6e6;background:#fff;}
+.m-list img{width:223px;height:124px;}
+.m-list p.name,.m-list p.provider{margin:10px 5px;color:#333;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+.m-list p.provider{color:#999;}
+.m-list span{height:16px;margin-left:5px;padding:0 3px 0 18px;border:1px solid #ddd;border-radius:1px;font:12px/16px "microsoft yahei";color:#999;background:url(../img/icon.png) no-repeat 0 -25px;}
+.m-list strong{display:block;margin:10px 5px;color:#ff3f00;}
+
+/* 课程详情 */
+.m-list li{position:relative;cursor:pointer;}
+.details{display:none;}
+.m-list li:hover .details{display:block;position:absolute;z-index:99;top:-10px;left:-10px;width:480px;box-shadow:0 1px 1px 1px #e6e6e6,inset 1px 0 0 #e9e8e8;background:#fff;}
+.details img{float:left;margin:10px 19px 20px 10px;}
+.details h3{margin:12px 10px 15px 0;font:18px/24px "microsoft yahei";color:#333;}
+.details span{border:none;}
+.details p.prom{margin:11px 0;font:12px/20px "microsoft yahei";color:#666;}
+.details p.description{clear:both;margin:0;padding:21px;font:14px/24px "microsoft yahei";color:#666;background:#f8f8f8;}
+
+/* 翻页器 */
+.m-page{height:20px;margin-top:10px;font:14px/20px "microsoft yahei";color:#666;text-align:center;margin-bottom:120px;}
+.m-page a{float:left;padding:0 7px;margin:0 4px;}
+.m-page a:hover{color:#fff;background:#9dd8b1;}
+.m-page a.active{color:#39a030;}
+.m-page a.prv,.m-page a.nxt{display:block;width:30px;height:20px;padding:0;}
+.m-page a.prv{background:url(../img/icon.png) no-repeat 0 -110px #9dd8b1;}
+.m-page a.nxt{background:url(../img/icon.png) no-repeat 0 -129px #9dd8b1;}
+
+/* 机构介绍视频区 */
+.m-video{height:229px;background:#fff;box-shadow:0 1px 1px 1px #e6e6e6;}
+.m-video h3{padding-left:20px;border-bottom:1px solid #ddd;font:16px/55px "microsoft yahei";color:#333;}
+.m-video .vdo{position:relative;margin:20px 22px;}
+.m-video .vdo p{margin-bottom:8px;font:14px "microsoft yahei";color:#666;}
+.m-video .vdo .toPlay{position:absolute;top:55px;left:66px;width:46px;height:46px;background:url(../img/video.png) no-repeat -7px -82px;cursor:pointer;}
+
+/* 最热排行 */
+.m-hot{overflow:hidden;height:778px;margin-top:22px;background:#fff;box-shadow:0 1px 1px 1px #e6e6e6;}
+.m-hot h3{padding-left:20px;border-bottom:1px solid #eee;font:16px/57px "microsoft yahei";color:#333;}
+.m-hot ul{margin:20px;width:183;height:720px;position:relative;overflow:hidden;}
+.m-hot li{margin-top:20px;height:50px;width:183px;position:absolute;top:0;}
+.m-hot img{float:left;width:50px;height:50px;margin-right:12px;cursor:pointer;}
+.m-hot p{margin-bottom:13px;font:14px/14px "microsoft yahei";color:#333;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+.m-hot span{height:16px;padding:0 3px 0 18px;font:12px/16px "microsoft yahei";color:#999;background:url(../img/icon.png) no-repeat 0 -25px;}
+
+/* 底部信息 */
+.g-ft{height:262px;background:#2c3339;color:#bebfc0;}
+.g-ft .copyright .m-crumb{margin:0;}
+.g-ft .copyright .m-crumb ul{color:#39a030;}
+.g-ft .copyright p{font:12px/24px "microsoft yahei";}
+.g-ft .copyright .m-crumb+p{margin-top:20px;}
+.g-ft .morelink ul{margin-top:80px;}
+.g-ft .morelink ul.frirdlink{width:210px;}
+.g-ft .morelink ul.about{width:134px;}
+.g-ft .morelink li{font:14px/28px "microsoft yahei";}
+.g-ft .morelink li.tip{font-size:12px;}
+.g-ft .morelink .weibo{display:inline-block;width:22px;height:18px;margin-left:13px;background:url(../img/icon.png) no-repeat 0 -90px;}
+.g-ft .morelink a{color:#bebfc0;}
+.g-ft .morelink a:hover{text-decoration:underline;}
+
+/* 弹窗遮罩及关闭部分 */
+.m-login,.m-player{position:fixed;top:0;left:0;z-index:98;width:100%;height:100%;}
+.m-login .login,.m-player .player{position:fixed;z-index:99;top:50%;left:50%;background:#fff;}
+.mask{width:100%;height:100%;background:rgba(0,0,0,0.8);}
+.mask{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8000000,endColorstr=#C8000000);}/*兼容IE8*/
+.close{position:absolute;width:23px;height:22px;background:url(../img/video.png) no-repeat -7px -144px;}
+
+/* 登录弹窗 */
+.m-login .login{width:387px;height:288px;margin:-144px 0 0 -193px;}
+.m-login .close{top:3px;right:1px;}
+.m-login .login #loginForm{margin:30px 52px 38px 40px;}
+.m-login .login h3{margin-bottom:20px;font:bold 18px/18px "microsoft yahei";color:#444;}
+.m-login .login .ipt{position:relative;margin-bottom:15px;}
+.m-login .login input{width:293px;height:43px;border:1px solid #dfdfdf;box-shadow:inset 1px 1px 2px 1px #f1f1f1;font:16px/43px "microsoft yahei";text-indent:10px;color:#000;background:#fafafa;}
+.m-login .login label{position:absolute;top:0;left:0;width:293px;height:43px;font:16px/43px "microsoft yahei";color:#ccc;text-indent:12px;}
+.m-login .login button{width:294px;height:47px;margin-top:15px;border:none;font:bold 16px/47px "microsoft yahei";color:#fff;letter-spacing:3px;background:url(../img/icon2.png) no-repeat 0 -121px;}
+
+/* 视频播放弹窗 */
+.m-player .player{width:950px;height:675px;margin:-322px 0 0 -475px;}
+.m-player .close{top:6px;right:5px;}
+.m-player h2{margin:30px 0 20px 30px;font:bold 18px/18px "microsoft yahei";color:#444;}
+.m-player video{margin:0 30px 40px;}
